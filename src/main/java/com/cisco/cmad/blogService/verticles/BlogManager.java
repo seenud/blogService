@@ -1,5 +1,6 @@
 package com.cisco.cmad.blogService.verticles;
 
+import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Vertx;
 import io.vertx.core.json.Json;
 import io.vertx.ext.web.RoutingContext;
@@ -23,7 +24,7 @@ import com.cisco.cmad.blogService.dto.BlogDTO;
 import com.cisco.cmad.blogService.mongodb.MongoDBUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class BlogManager {
+public class BlogManager extends AbstractVerticle {
 	Logger logger = Logger.getLogger(BlogManager.class.getName());
 	ObjectMapper mapper = new ObjectMapper();
 	Datastore dataStore = MongoDBUtil.getMongoDB();
