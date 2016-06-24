@@ -1,5 +1,6 @@
 package com.cisco.cmad.blogService.verticles;
 
+
 import io.vertx.core.Vertx;
 import io.vertx.core.http.HttpClient;
 import io.vertx.core.http.HttpServer;
